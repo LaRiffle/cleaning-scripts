@@ -8,6 +8,7 @@ class Gender(Enum):
 
 
 def map_gender(raw_input):
+    """Map gender codes 'M'->'male' 'F'->'female'"""
     mapping = {"M": Gender.MALE.value, "F": Gender.FEMALE.value}
     if raw_input in mapping.keys():
         return mapping[raw_input]
