@@ -4,6 +4,7 @@ from scripts import utils
 
 
 def clean_date(raw_input):
+    """Convert date to ISO format"""
     if utils.is_empty(raw_input):
         return ""
 
